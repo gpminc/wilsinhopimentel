@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óticas Kadosh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bcg">
+        <header>
+            
+                <a href="" id="link-logo"><img src="./Imagens/Logo.png" alt="" id="img-logo"></a>
+          
+          
+              
+                    <a href="oculos_de_grau.html"><strong>SOBRE MIM</strong></a>
+               
+                
+                    <a href="oculos_de_sol.html"><strong>PROJETOS</strong></a>
+               
+               
+                    <a href=""><strong>REDES SOCIAIS</strong></a>
+                
+            
+           
+                <a href="https://wa.me/557193033489"><button id="meu-botao">CONVERSE CONOSCO</button></a>
+           
+        </header>
+        <div class="container">
+            <div id="bloco-1">
+                <h1>A Renovação que a gente quer e precisa!</h1>
+                <p><strong>WILSINHO PIMENTEL</strong></p>
+                <img src="./Imagens/5555.png" alt="" id="img-num">
+            </div>
+            <div id="bloco-2">
+                <img src="./Imagens/Foto2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="propostas">
+        <h1>PROPOSTAS</h1>
+        <div id="bloco">
+            <div id="bloco-1-proposta">
+                <h1>HOSPITAL MUNICIPAL DE IBICARAÍ/BA</h1>
+                <h2>TRASNFORMAR NOSSO HOSPITAL EM FUNDAÇÃO</h2>
+                <div id="txt-proposta">
+                    <p>A nossa proposta de governo focada na gestão de saúde no âmbito do hospital municipal é instituir a fundação municipal
+                        de saúde entidade como personalidade jurídica de direito público, como autonomia administrativa e financeira, com sede
+                         e foro nessa cidade e que terá por finalidade:
+                    </p>
+                    <div>
+                        <li>
+                            Execultar a política de saúde no âmbito hospitalar municipal, em consonância com as diretrizes da administração e 
+                            congregando as diversas instituições de saúde de Ibicaraí;
+                        </li>
+                        <li>
+                            Manter e estabelecer as linhas de  atuação do "Conselho Municipal de Saúde" e outras institueções a serem incorporadas;
+                        </li>
+                        <li>
+                            Congregar todas as forças de saúde pública, privadas e filantrôpico, visando uma ação conjunta em prol do desenvolvimento
+                             do hospital municipal, e promoções das mais variadas, para obtenção de recursos financeiros;
+                        </li>
+                        <li>
+                            Estabelecer convênios, acordos e termos de cooperação com entidades congêneres para ampliação dos serviços.
+                        </li>
+                    </div>
+                    <p>
+                        É importante ressaltar que os empregos estarão garantidos e a prioridade será pelo funcionários do município. Em linhas 
+                        gerais, esse é o contexto que nos motiva a criar a Fundação: propocionar ao hospital e os municípios uma gestão mais eficiente e
+                        célere no conjunto dos serviços prestados atualmente e na possibilidade de ampliar as ofertas de atendimento no nosso hospital.
+                         Além disso, reduzir custos, aumentar a produtividade, potecializar faturamento, gestão integrada com as outras unidades de saúde,
+                         gestão clínica através da criação dos protocolos de saúde, inovação de tecnologia.
+                    </p>
+                </div>
+            </div>
+            <div id="bloco-2-proposta">
+                <img src="./Imagens/55555-Wilsinho-A-Renova.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="div-eu">
+        <h1>Quem sou eu?</h1>
+        <div id="bloco-eu">
+            <div id="bloco-1-eu">
+
+            </div>
+            <div id="bloco-2-eu">
+                <img src="./Imagens/foto4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        <div id="div-footer1">
+            <img src="/Imagens/Logo_Kadosh-removebg-preview.png" alt="">
+        </div>
+        <div id="div-footer2">
+            <div id="div-footer-info-contato">
+                <div class="div-row">
+                    <a href="">
+                        <div>
+                            <img src="./imagens/Insta.png" alt="" id="insta">
+                            <a href="https://www.instagram.com/oticaskadoshlf/">@oticaskadoshlf</a>
+                        </div>
+                    </a>
+                    
+                        <div id="div-email">
+                            <img src="./imagens/email.png" alt="" id="email">
+                            <p>SeuEmail@email.com</p>
+                        </div>
+                </div>
+                <div class="div-row">
+                    <a href="">
+                        <div>
+                            <img src="./imagens/Face.png" alt="" id="face">
+                            <p>Seu Facebook</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div>
+                            <img src="./imagens/localizacao.png" alt="" id="img-local" itemid="loc">
+                            <p>​Seu endereço</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const divBotao = document.getElementById("div-botao");
+    const container = document.querySelector("#bloco-1");
+    const header = document.querySelector("header");
+
+    function moverBotao() {
+        if (window.innerWidth <= 768) {
+            // Move a div do botão para o container se estiver em um dispositivo móvel
+            if (!container.contains(divBotao)) {
+                container.appendChild(divBotao);
+                divBotao.style.display = "block"; // Exibe a div no container
+            }
+        } else {
+            // Retorna a div do botão para o header se a tela for maior
+            if (!header.contains(divBotao)) {
+                header.appendChild(divBotao);
+                divBotao.style.display = "flex"; // Exibe a div no header
+            }
+        }
+    }
+
+    // Executa ao carregar a página
+    moverBotao();
+
+    // Adiciona um listener para a mudança de tamanho da tela
+    window.addEventListener("resize", moverBotao);
+});
+
+    </script>
+</body>
+</html>
