@@ -11,16 +11,14 @@
         <header>
             
                 <a href="" id="link-logo"><img src="./Imagens/Logo.png" alt="" id="img-logo"></a>
-          
-          
-              
-                    <a href="oculos_de_grau.html"><strong>SOBRE MIM</strong></a>
                
                 
-                    <a href="oculos_de_sol.html"><strong>PROJETOS</strong></a>
+                    <a href="#propostas"><strong>PROPOSTAS</strong></a>
+
+                    <a href="#div-eu"><strong>SOBRE MIM</strong></a>
                
                
-                    <a href=""><strong>REDES SOCIAIS</strong></a>
+                    <a href="#div-footer"><strong>REDES SOCIAIS</strong></a>
                 
             
            
@@ -38,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="propostas">
+    <div class="propostas" id="propostas">
         <h1>PROPOSTAS</h1>
         <div id="bloco">
             <div id="bloco-1-proposta">
@@ -108,7 +106,7 @@
                         </a>
                         <a href="">
                             <div>
-                                <img src="./Imagens/email.png" alt="" id="email">
+                                <img src="./Omagens/email.png" alt="" id="email">
                                 <p class="paragrafo">SeuEmail@email.com</p>
                             </div>
                         </a>    
@@ -156,6 +154,17 @@
 
     // Adiciona um listener para a mudança de tamanho da tela
     window.addEventListener("resize", moverBotao);
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
 
     </script>
