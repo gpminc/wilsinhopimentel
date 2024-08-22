@@ -92,6 +92,7 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 #bloco-1 img{
@@ -104,6 +105,7 @@ a:hover{
     justify-content: center;
     align-items: end;
     padding-top: 2%;
+    box-sizing: border-box; 
 }
 
 #bloco-2 img{
@@ -148,7 +150,7 @@ button:hover{
     background-image: url(./Imagens/17_esasase12.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 120%;
     
 }
 
@@ -201,9 +203,10 @@ button:hover{
 #txt-proposta{
     width: 85%;
     box-sizing: border-box;
-    padding-left: 3%;
-    padding-right: 3%;
-    border-left: 2px solid rgb(20, 43, 176);
+    border-radius: 15px;
+    background-color: rgb(20, 43, 176);
+    padding: 3%;
+    margin-top: 3%;
 }
 
 #txt-proposta p{
@@ -264,7 +267,8 @@ button:hover{
     flex-direction: row;
     width: 100%;
 }
-/* #div-footer1{
+
+#div-footer1{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -288,13 +292,25 @@ button:hover{
 
 footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 37px;
     padding-bottom: 37px;
-    background-color: #1ca3cb;
+    background-color: #13bc3f;
+}
+
+footer h1{
+    color: white;
+    padding-bottom: 2%;
+}
+
+#div-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #div-footer-info-contato{
@@ -305,17 +321,15 @@ footer{
     align-items: center;
 }
 
-#div-footer-info-contato p {
-    font-size: 14px;
-}
 
 .div-row{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2%;
-    width: 100%;
+    gap: 5%;
+    width: 80%;
+    padding-bottom: 2%;
 }
 
 .div-row div{
@@ -323,7 +337,7 @@ footer{
     justify-content: left;
     align-items: center;
     flex-direction: row; 
-    width: 80%;
+    width: 100%;
     gap: 10px;
 }
 .div-row a{
@@ -331,8 +345,13 @@ footer{
     justify-content: left;
     align-items: center;
     flex-direction: row;
-    width: 30%;
+    width: 40%;
     gap: 10px;
+}
+
+.paragrafo{
+    font-size: 1vw;
+    color: white;
 }
 
 #img-local{
@@ -341,12 +360,12 @@ footer{
 #insta{
     width: 20%;
 }
-#face{
+#zap{
     width: 20%;
 }
 #email{
     width: 20%;
-} */
+}
 
 #div-email{
     display: flex;
@@ -361,25 +380,44 @@ footer{
    .container{
         display: flex;
         flex-direction: column;
+        padding-top: 15%;
+        height: auto;
     }
 
     body{
         background-image: none;
     }
 
-    #div-logo{
-        width: 30%;
+    #img-logo{
+        width: 100%;
     }
 
-    #div-header-links{
-        width: 70%;
-        font-size: 3vw;
-        gap: 5%;
+    header{
+        width: 100%;
+        font-size: 2.5vw;
+        gap: 2%;
+        height: 10vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-right: 2%;
+        position: fixed;
+    }
+
+    header a{
+        width: 20%;
+    }
+
+    #link-logo{
+        width: 25%;
+    }
+
+    #meu-botao{
+        width: 60%;
+        font-size: 5 vw;
+        height: 5vh;
+        color: #13bc3f;
+        border: 1px solid #13bc3f;
     }
 
     .div-link{
@@ -400,18 +438,122 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0;
-        margin: 5%;
+    }
+    
+    #bloco-1 p{
+        font-size: 7vw;
+    }
+
+    #bloco-2{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #bloco-2 img{
+        width: 40%;
     }
 
     h1{
-        font-size: 50px;
+        font-size: 12vw;
     }
 
-    h2{
-        display:none ;
+    .propostas{
+        background-image: url(./Imagens/uerrt16.jpg);
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position:center;
+        background-size: 100%;
     }
 
+    .propostas h1{
+        font-size: 8vw;
+    }
+
+    #txt-proposta{
+        border-radius: 10px;
+    }
+
+    #bloco-1-proposta h1{
+        font-size: 2.8vw;
+        color: white;
+    }
+
+    #txt-proposta p{
+        color: white;
+        font-size: 2.2vw;
+    }
+
+    #txt-proposta li{
+        font-size: 2.2vw;
+    }
+
+    #bloco-2-proposta img{
+        width: 80%;
+    }
+
+    #div-eu h1{
+        font-size: 8vw;
+    }
+
+    #bloco-2-eu img{
+        width: 100%;
+    }
+
+    footer h1{
+        font-size: 5vw;
+    }
+
+    #div-footer1 img{
+        width: 40%;
+    }
+
+    .paragrafo{
+        font-size: 1.5vw;
+        color: white;
+    }
+    
+    #img-local{
+        width: 20%;
+    }
+    #insta{
+        width: 20%;
+    }
+    #zap{
+        width: 20%;
+    }
+    #email{
+        width: 20%;
+    }
+
+    .div-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    
+    .div-row div{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row; 
+        width: 100%;
+        gap: 3%;
+    }
+    .div-row a{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        gap: 10px;
+    }
      /* 
     #bloco-2 img{
         width: 80%;
